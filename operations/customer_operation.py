@@ -15,15 +15,15 @@ def get_customer_with_id(customer_id: int):
     for index, customer in enumerate(customers):
         if customer['customer_id'] == customer_id:
             return {
-                'index': index,
-                'data': customer
+                "index": index,
+                "data": customer
             }
     return False
 
 def delete_one_with_customer_id(customer_id: int):
     customer = get_customer_with_id(int(customer_id))
     if customer: 
-        customers.pop(customer['index'])
+        customers.pop(customer["index"])
         return True
     return False
 

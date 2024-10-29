@@ -11,8 +11,8 @@ def car_menu():
     print("[4] Show All Cars")
     print("[0] Back To Previous\n")
     
-    chosenMenu = int(input('Masukan Pilihan: '))
-    print('\n')
+    chosenMenu = int(input("Masukan Pilihan: "))
+    print("\n")
     
     if chosenMenu == 1:
         car_management.add_car()
@@ -39,8 +39,8 @@ def customer_menu():
     print("[4] Show All Customers")
     print("[0] Back To Previous\n")
     
-    chosenMenu = int(input('Masukan Pilihan: '))
-    print('\n')
+    chosenMenu = int(input("Masukan Pilihan: "))
+    print("\n")
     
     if chosenMenu == 1:
         customer_management.add_customer()
@@ -67,8 +67,8 @@ def rent_menu():
     print("[4] Show All Transactions")
     print("[0] Back To Previous\n")
     
-    chosenMenu = int(input('Masukan Pilihan: '))
-    print('\n')
+    chosenMenu = int(input("Masukan Pilihan: "))
+    print("\n")
     
     if chosenMenu == 1:
         rent_management.rent_transaction()
@@ -94,8 +94,8 @@ def main_menu():
     print("[3] Management Rent")
     print("[0] Close The Program\n")
     
-    chosenMenu = int(input('Masukan Pilihan: '))
-    print('\n')
+    chosenMenu = int(input("Masukan Pilihan: "))
+    print("\n")
     
     
     if chosenMenu == 1:
@@ -110,7 +110,7 @@ def main_menu():
         print_error("Choose the correct number!")
         
 def close_program():
-    print("Do you really want to close the program?(y/n) ", end='')
+    print("Do you really want to close the program?(y/n) ", end="")
     
     if input() == "y":
         exit(1)
