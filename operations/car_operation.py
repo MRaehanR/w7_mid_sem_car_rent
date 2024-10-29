@@ -1,14 +1,17 @@
 cars = []
 status_type = ["Unavailable", "Available"]
 
-def create_one(car_id: int, car_number: int, brand: str, model: str, year: int, status: int):
+def create_one(car_id: int, car_number: int, brand: str, model: str, year: int, status: str):
     car = {}
     car['car_id'] = car_id
     car['car_number'] = car_number
     car['brand'] = brand
     car ['model'] = model
     car ['year'] = year
-    car ['status'] = status_type[status]
+    if status.lower() == 'true':
+        car['status'] = "Available"
+    else:
+        car['status'] = "Unvailable"
     
     cars.append(car)
     

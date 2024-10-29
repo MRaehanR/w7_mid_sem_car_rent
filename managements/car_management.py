@@ -7,7 +7,7 @@ def add_car():
     brand = str(input("Input Brand: "))
     model = str(input("Input Model: "))
     year = int(input("Input Year: "))
-    status = int(input("Status Available?(0/1): "))
+    status = str(input("Status Available?(true/false): "))
     
     is_found = car_operation.get_car_with_car_number(int(car_number))
     if is_found:
