@@ -1,7 +1,7 @@
 cars = []
 status_type = ["Unavailable", "Available"]
 
-def create_one(car_id: int, car_number: int, brand: str, model: str, year: int, status: bool):
+def create_one(car_id: int, car_number: int, brand: str, model: str, year: int, status: int):
     car = {}
     car['car_id'] = car_id
     car['car_number'] = car_number
