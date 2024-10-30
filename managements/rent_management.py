@@ -33,8 +33,6 @@ def return_transaction():
                 transaction ['data'] ['status'] = "returned"
                 car_operation.cars[car['index']]['status'] = 'Available'
                 print_success("Successfuly Returned Car")
-            else:
-                print_error("Car has been returned")
     else:
         print_error("Car Number Not Found")
             
